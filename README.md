@@ -3,27 +3,35 @@
 ## Pre-requisites
 * Recipe API (?)
 ## Views
-### Swipe
+### Protected Views
+#### Swipe
 Recipes are shown randomly (based on preferences). The user swipes or can look further by tapping on the recipe.
 Recipes can have different states:
 - saved     : added to a list to be tested (not included into *discovery* function)
 - favorited : added to preferred recipes
-### Search
+#### Search
 A search engine (search field) allows to search recipes by different parameters.
 Two tabs are shown to display recipes or ingredients.
-### Lists
+#### Lists
 The lists are displayed in two tabs [saved|favorited]
 Recipes are listed inline (or grid?) showing an avatar of the recipe, the name, and cooking time.
 Sliding the recipe to the left shows options: add to favorite(star icon) and delete.
 Taping on a line opens the recipe page with the details;
 - servings, 
-### Profile - Settings
+#### Profile - Settings
 Avatar, name, location shown.
 - Change measurement system (default based on user location) [imperial|metric]
 - Change prep and cooking-time (slider) [0->60min+]
 - Pick a specific cuisine [All|European|Asian|African|Latin_American]
 - Filter recipes by course [breakfast|lunch|dinner]
 - Discovery checkbox [True|False]
+### Public Views
+#### Home
+Homepage presenting the app and features (might be removed and login replaced as main page).
+#### Login
+Login page allowing registered users access to the application.
+#### Signup
+Signup page allowing visitors to register to the app. 
 ## Features(free)
 * Choose recipes
 * Search recipes by:
