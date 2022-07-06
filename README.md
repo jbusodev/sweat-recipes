@@ -11,11 +11,11 @@ Recipes can have different states:
 - favorited : added to preferred recipes
 #### Search
 A search engine (search field) allows to search recipes by different parameters.
-Two tabs are shown to display recipes or ingredients.
+Recipes may be displayed in list view or grid view.
 #### Lists
 The lists are displayed in two tabs [saved|favorited]
-Recipes are listed inline (or grid?) showing an avatar of the recipe, the name, and cooking time.
-Sliding the recipe to the left shows options: add to favorite(star icon) and delete.
+Recipes are listed inline showing an avatar of the recipe, the name, and cooking time.
+Sliding the recipe to the right on mobile toggles favorite(star icon), sliding to the left delete.
 Taping on a line opens the recipe page with the details;
 - servings, 
 #### Profile - Settings
