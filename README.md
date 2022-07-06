@@ -45,3 +45,9 @@ Avatar, name, location shown.
 * displaying
 * view types (line, grid)
 * image processing (recipes)
+
+## Stack
+- Django
+- SQLite
+- React
+- Node
