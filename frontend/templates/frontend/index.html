@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="{% static 'frontend/favicon.ico' %}" />
+        <link rel="stylesheet" href="{% static 'frontend/style.scss' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Recipe App with list features" />
+        <link
+            rel="apple-touch-icon"
+            href="{% static 'frontend/logo192.png' %}"
+        />
+        <link rel="manifest" href="{% static 'frontend/manifest.json' %}" />
+        <title>Sweat - Eating made easy</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <script
+            type="text/javascript"
+            src="{% static 'frontend/public/main.js' %}"
+        ></script>
+    </body>
+</html>

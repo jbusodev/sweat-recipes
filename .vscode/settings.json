@@ -1,0 +1,5 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "/home/jbuso/.local/share/virtualenvs/sweat-project-FoiUJWYM/bin/python"
+}

@@ -1,0 +1,386 @@
+// Colors
+$primary-color: black;
+$primary-bg-color: white;
+$secondary-color: rgba(0, 0, 0, 0.9);
+$secondary-bg-color: #f8f9fa;
+$dark-bg-color: #131516;
+$active-color: #fc8062;
+$active-hover-color: lightsalmon;
+$active-focus-box-shadow: 0 0 0 0.25rem rgba(253, 146, 13, 0.25);
+$save-color: red;
+$fav-color: gold;
+$info-color: black;
+$gradiant-color-1: orange;
+$gradiant-color-2: firebrick;
+$spin-1: $active-color;
+$spin-2: #ffc8b3;
+$spin-3: #ffe9e0;
+$spin-4: $secondary-bg-color;
+// END Colors
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $primary-bg-color;
+}
+
+.App-link {
+  color: $active-color;
+}
+
+/* custom BOOTSTRAP CSS */
+#contentHome {
+  min-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  min-height: 80vh;
+  max-width: 1024px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
+.orange-gradient {
+  background-image: linear-gradient(
+    to right,
+    $gradiant-color-1,
+    $gradiant-color-2
+  );
+}
+
+#navbar {
+  display: inherit;
+}
+
+.navbar {
+  padding: 0.5rem;
+}
+
+.navbar img,
+.navbar svg {
+  width: 40vw;
+  max-width: 200px;
+  height: auto;
+}
+
+.card-item {
+  border: 1px solid $primary-color;
+}
+
+.rounded-left {
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.rounded-right {
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+
+#recipe-count h4 {
+  line-height: inherit;
+}
+
+.icon-wrapper {
+  color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-wrapper svg {
+  width: 24px;
+  height: auto;
+}
+
+.nav-tabs {
+  font-size: larger;
+  display: flex;
+}
+
+.icon-wrapper:hover {
+  color: $active-color;
+}
+
+table {
+  max-width: 1024px;
+}
+
+tr > td,
+tr > th {
+  vertical-align: middle;
+}
+
+.nav-link {
+  color: $primary-color !important;
+  cursor: default;
+}
+
+.nav-link.active,
+.active {
+  color: $active-color !important;
+}
+
+.active {
+  color: $active-color;
+}
+
+.nav-link:not(.active) {
+  cursor: pointer;
+}
+
+.btn-orange {
+  color: $primary-bg-color;
+  background-color: $active-color;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.btn-orange:hover {
+  background-color: $active-hover-color;
+}
+
+.save-red {
+  color: $save-color;
+}
+
+.fav-yellow {
+  color: $fav-color;
+}
+.info-white {
+  color: $info-color;
+  flex: 1;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+  text-align: justify;
+}
+
+.card-title p {
+  margin-bottom: 0;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: $secondary-bg-color;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+// login
+.m-form {
+  position: relative;
+  // top: 10vh;
+}
+
+.form-bg form {
+  background-color: $primary-bg-color;
+  height: max-content;
+  text-align: center;
+  min-width: 500px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.form-bg .navbar {
+  background-color: transparent !important;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+form p {
+  margin-top: 1em;
+}
+
+form h3 {
+  margin-bottom: 1em;
+}
+
+.content a,
+form a,
+footer a {
+  color: $active-color;
+  text-decoration: none;
+}
+.content a:hover,
+form a:hover,
+footer a:hover {
+  color: $active-hover-color;
+}
+
+.custom-control input:checked::after {
+	content: '\2713';
+	font-size: 16px;
+	position: absolute;
+	top: -4px;
+	left: 3px;
+  color: $primary-bg-color;
+}
+
+.form-control:focus{
+  border-color: $active-hover-color !important;
+  box-shadow: $active-focus-box-shadow !important;
+}
+
+.form-check-input:focus {
+  box-shadow: $active-focus-box-shadow !important;
+}
+
+.form-group > label,
+.custom-control {
+  width: 100%;
+  text-align: left;
+}
+
+.custom-control input[type="checkbox"] {
+  appearance: none;
+  border: 1px solid #ced4da;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25rem;
+	position: relative;
+}
+
+// credentials messages
+.invalid-feedback {
+  text-align: left;
+}
+
+.form-check-input:checked, .custom-control input:checked {
+  background-color: $active-color !important;
+  border: none;
+}
+
+footer {
+  background-color: $secondary-bg-color;
+  padding: 2rem 1rem;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+footer .row:first-child .col-6 {
+  text-align: left;
+}
+
+footer .row:last-child {
+  justify-content: space-around;
+}
+footer .row:last-child .col-6:last-child {
+  text-align: right;
+}
+footer .row:last-child .col-6:first-child {
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+// Loading Spinner
+.spin {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: $active-color;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hideSm {
+    display: none;
+  }
+
+  .form-bg form {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .row:last-child .col-6:last-child {
+    text-align: revert;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+  .screen-hidden {
+    display: none !important;
+  }
+}
