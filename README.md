@@ -17,7 +17,7 @@ Recipes are listed inline (or grid?) showing an avatar of the recipe, the name, 
 Sliding the recipe to the left shows options: add to favorite(star icon) and delete.
 Taping on a line opens the recipe page with the details;
 - servings, 
-### Settings
+### Profile - Settings
 Avatar, name, location shown.
 - Change measurement system (default based on user location) [imperial|metric]
 - Change prep and cooking-time (slider) [0->60min+]
