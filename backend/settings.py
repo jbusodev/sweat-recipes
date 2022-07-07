@@ -1,6 +1,10 @@
 from distutils.log import error
 import os
 from datetime import timedelta
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -180,8 +184,3 @@ REACT_ROUTES = [
     'profile',
     ...
 ]
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
