@@ -6,7 +6,6 @@ try:
 except ImportError:
     pass
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -75,6 +74,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 # CORS Settings for localhost
+
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8000',
@@ -82,7 +82,6 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 # Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -93,10 +92,11 @@ DATABASES = {
 
 
 # User Custom Model
+
 AUTH_USER_MODEL = 'authentication.CustomUser'
 
+
 # Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -115,6 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Rest Framework and JSON Web Token Settings
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -141,7 +142,6 @@ SIMPLE_JWT = {
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -155,7 +155,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = 'static/'
 
@@ -171,7 +170,9 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/media')
 
+
 # React Routes
+
 REACT_ROUTES = [
     'login',
     'signup',
