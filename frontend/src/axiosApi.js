@@ -14,6 +14,7 @@ const axiosInstance = axios.create({
     },
 });
 
+// interceptor which refreshes token if access token has expired to maintain connexion
 axiosInstance.interceptors.response.use(
     response => response,
     error => {
