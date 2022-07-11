@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, "./static/frontend/public/"),
 
         // 127.0.0.1/frontend/public/ where files are served from
-        publicPath: "/static/frontend/public/",
+        publicPath: "./static/frontend/public/",
         filename: "main.js",
     },
     module: {
@@ -42,6 +42,7 @@ module.exports = {
     },
 };
 
+// config for live-reload on changes
 const config = module.exports;
 const compiler = webpack(config);
 
