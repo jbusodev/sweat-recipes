@@ -146,6 +146,18 @@ tr > th {
   vertical-align: middle;
 }
 
+.link {
+  background-color: transparent;
+  vertical-align: baseline;
+  border: 0;
+  color: $active-color;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: $active-hover-color;
+}
+
 .nav-link {
   color: $primary-color !important;
   cursor: default;
