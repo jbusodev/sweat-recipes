@@ -38,7 +38,7 @@ build/
 develop-eggs/
 dist/
 staticfiles/
-**/public
+public/
 downloads/
 eggs/
 .eggs/
