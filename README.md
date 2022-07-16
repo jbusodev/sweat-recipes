@@ -59,3 +59,6 @@ Signup page allowing visitors to register to the app.
 - SQLite
 - React
 - Node
+
+## Improvements
+- Use [djoser](https://djoser.readthedocs.io/en/latest/introduction.html) to simplify code. 
